@@ -6,25 +6,35 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { BicycleCreatePage } from '../pages/bicycle-create/bicycle-create';
+import { RestProvider } from '../providers/rest/rest';
+import { HttpClientModule } from '@angular/common/http';
+import { BicycleUpdatePage } from '../pages/bicycle-update/bicycle-update';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    BicycleCreatePage,
+    BicycleUpdatePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    BicycleCreatePage,
+    BicycleUpdatePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RestProvider
   ]
 })
 export class AppModule {}

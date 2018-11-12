@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Bicycle Create</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form #bicycleForm="ngForm" (ngSubmit)="save(bicycleForm.value)">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item>
+            <ion-input placeholder="Bicycle Brand" name="name" type="text" required [(ngModel)]="bicycle.name" #name></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Year" name="year" type="number" required [(ngModel)]="bicycle.year" #year></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+        <button ion-button color="primary" full type="submit" [disabled]="!bicycleForm.form.valid">Save</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
