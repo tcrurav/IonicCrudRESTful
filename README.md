@@ -4,15 +4,15 @@ It's just that...
 
 Screenshots for creating:
 
-![alt text](https://https://github.com/tcrurav/IonicCrudRESTful/blob/master/screenshots/CreateBicycle.png)
+![alt text](https://github.com/tcrurav/IonicCrudRESTful/blob/master/screenshots/CreateBicycle.png)
 
 Screenshots for updating:
 
-![alt text](https://https://github.com/tcrurav/IonicCrudRESTful/blob/master/screenshots/UpdateBicycle.png)
+![alt text](https://github.com/tcrurav/IonicCrudRESTful/blob/master/screenshots/UpdateBicycle.png)
 
 Screenshots for deleting:
 
-![alt text](https://https://github.com/tcrurav/IonicCrudRESTful/blob/master/screenshots/DeleteBicycle.png)
+![alt text](https://github.com/tcrurav/IonicCrudRESTful/blob/master/screenshots/DeleteBicycle.png)
 
 ### Prerequisites
 
